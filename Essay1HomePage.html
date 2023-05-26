@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images copy/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="Essay1HomePage.html">Home</a></li>
+                    <li><a href="Essay1AboutUs.html">About Us</a></li> <!-- on met le about us et les servises ensemble hek juste on explik c koi les 2 et pr utilise les services sa sera enba ds la page-->
+                    <li><a href="Essay1Specialists.html">Specialists</a></li>
+                    <li><a href="Essay1ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="images copy/ui_user_profile.png" class="menu-icon"
+            onclick="togglemenu()">
+        </div>
+        <hr> <!-- jusk ici sa sera la meme chose pour tte les page   -->
+        <div class="row">
+            <div class="col-1">
+                <h2>Checkup</h2>
+                <h3>Quick and Easy AI Desease Predictor</h3>
+                <p>describe your illness well!</p>
+                <button type="button">Get Started<img src="images copy/carre1.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="images copy/robot.jpeg"class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images copy/doctor.png">
+                    <p><small>Have a complaint?</small></p>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-1">
+                <h2>Emergency Care</h2>
+                <h3>The Necessary Steps to Take Care of an Urgent Situation</h3>
+                <p>educate yourself!</p>
+                <button type="button">Get Started<img src="images copy/ambulance.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="images copy/robot.jpeg"class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images copy/doctor.png">
+                    <p><small>Have a complaint?</small></p>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-1">
+                <h2>Qualified Doctors</h2>
+                <h3>Book a Checkup Today and The Rest Is On Us!</h3>
+                <p>let us take care of you!</p>
+                <button><a class="design" href="Essay1Specialists.html">Get Started<img src="images copy/carre4.png"></a></button>
+            </div>
+            <div class="col-2">
+                <img src="images copy/robot.jpeg"class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images copy/doctor.png">
+                    <p><small>Have a complaint?</small></p>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-1">
+                <h2>Vitamines Consultant</h2>
+                <h3>The Necessary Steps to be at your best performence</h3>
+                <p>feel good inside out!</p>
+                <button type="button">Get Started<img src="images copy/ambulance.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="images copy/robot.jpeg"class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images copy/doctor.png">
+                    <p><small>Have a complaint?</small></p>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="titrefooter">
+            <h1 class="h1footer">U Health</h1>
+        </div>
+        <div class="social-links">
+            <img src="images copy/facebook logo.png">
+            <img src="images copy/Instagram logo.webp">
+            <img src="images copy/YouTube logo.webp">
+        </div>
+
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                {
+                     menuList.style.maxHeight="130px"
+                }
+            else
+                {
+                    menuList.style.maxHeight="0px"
+                }
+        }
+    </script>
+<style>
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;  
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #00BFFF;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px; 
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+    margin: 30px 0;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #55D4FF, #55D4FF);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{ 
+    display: block;
+}
+button:hover{ 
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#55D4FF, #00BFFF);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width: 90%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#00BFFF, #00BFFF);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+.add-btn img{
+    width: 35px;
+    margin-bottom: 5px;
+}
+.add-btn{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.social-links img{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links {
+    text-align: center;
+}
+.titrefooter{
+    width: 100%;
+    height: 80px;
+    border: white solid 2px;
+    background-color: #00AAE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.design{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#00BFFF, #00BFFF);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 00.5s;
+    }
+    .row{
+        flex-direction:column;
+        margin: 50px 0;
+    }
+    col-1{
+        flex-basis: 100%;
+    }
+    col-1 h2{
+        font-size: 35px;
+    }
+    col-1 h3{
+        font-size: 15px;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .controller{
+        width: 77%;
+    }
+    .color-box{
+        transform: translateX(8px);
+    }
+}
+</style>
+</body>
+</html>
